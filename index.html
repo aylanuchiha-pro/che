@@ -1,0 +1,551 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission CHE - Rapport de Victoire</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="cyber-nav">
+    <div class="logo">OPERATEUR_01</div>
+
+    <div class="progress-wrapper">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="status">STATUS: <span class="online">ONLINE</span></div>
+  </nav>
+
+  <header class="hero-section" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-noise"></div>
+
+    <div class="hero-content">
+      <h4 class="glitch-text" data-text="MISSION LOG">MISSION LOG</h4>
+      <h1 class="mega-title">CYBER<br>HUMANUM<br>EST</h1>
+      <p class="hero-subtitle">Du briefing a la domination numerique.</p>
+
+      <div class="hero-cta">
+        <a href="#presentation-che" class="cyber-btn">LANCER LE RAPPORT</a>
+        <a href="#end-che" class="cyber-btn ghost">ALLER AU RESULTAT</a>
+      </div>
+
+      <div class="hero-hud">
+        <div class="hud-item">
+          <div class="hud-label">OPERATION</div>
+          <div class="hud-value">CHE</div>
+        </div>
+        <div class="hud-item">
+          <div class="hud-label">MODE</div>
+          <div class="hud-value">IMMERSIF</div>
+        </div>
+        <div class="hud-item">
+          <div class="hud-label">STATUS</div>
+          <div class="hud-value ok">READY</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span class="dot"></span>
+      <span class="text">SCROLL</span>
+    </div>
+  </header>
+
+  <!-- PRESENTATION CHE (DOSSIER) -->
+  <section id="presentation-che" class="full-section intro-mode">
+    <div class="intro-overlay"></div>
+    <div class="intro-lines"></div>
+
+    <div class="container-split">
+      <div class="text-block reveal-left">
+        <h2 class="section-title">DOSSIER <span class="accent">CHE</span></h2>
+        <p class="lead">Exercice immersif de cybersecurite concu pour les etudiants de l Universite de Lorraine.</p>
+
+        <p>
+          L exercice universitaire immersif Cyber Humanum Est est organise conjointement par la Base de Defense de Nancy
+          et Lorraine INP, sous la tutelle du Commandement de la Cyberdefense (COMCYBER) du ministere des Armees
+          et de l Universite de Lorraine.
+        </p>
+
+        <p>
+          Chaque annee, plus de 100 etudiants issus de Mines Nancy, Telecom Nancy, Polytech Nancy, FST (Master SIRAV),
+          UFR SHS (Master VSOC), UFR MIM (Master SIS) et IUT Nancy Brabois (BUT Reseaux et Telecoms, parcours Cybersecurite)
+          relevent des defis complexes dans un environnement proche du reel.
+        </p>
+
+        <p>
+          Les scenarios melent exploitation de vulnerabilites, cyberdefense, lutte informatique offensive et guerre informationnelle.
+          L exercice se conclut par un forum de recrutement reserve aux partenaires, suivi d une ceremonie de remise des prix.
+        </p>
+
+        <div class="intro-actions">
+          <a href="#briefing" class="cyber-btn">PASSER AU KICKOFF</a>
+          <!-- <a href="mailto:tonemail@exemple.com" class="cyber-btn white">DEVENIR PARTENAIRE</a> -->
+        </div>
+      </div>
+
+      <div class="visual-block reveal-right">
+        <div class="holo-card holo-variant">
+          <h3>FICHE SYNTHETIQUE</h3>
+          <ul>
+            <li>► Tutelle: COMCYBER (Ministere des Armees)</li>
+            <li>► Co organisation: Base de Defense Nancy, Lorraine INP</li>
+            <li>► Public: etudiants, presse, journaux</li>
+            <li>► Format: immersion + defis cyber</li>
+            <li>► Final: forum partenaires + remise des prix</li>
+          </ul>
+          <div class="stamp">ACCESS: PARTNERS</div>
+          <div class="scan-line"></div>
+        </div>
+
+        <div class="signal-line"></div>
+
+        <div class="mini-terminal" aria-label="terminal">
+          <div class="mini-terminal-top">
+            <span class="lamp r"></span><span class="lamp y"></span><span class="lamp g"></span>
+            <span class="mini-terminal-title">dossier_che.log</span>
+          </div>
+          <pre class="mini-terminal-body" id="miniTerminal"></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KICKOFF (SPLIT + IMAGE SLOT) -->
+  <section id="briefing" class="full-section dark-mode kickoff-mode">
+    <div class="kickoff-grid">
+      <div class="kickoff-panel reveal-left">
+        <div class="kickoff-badge">KICKOFF</div>
+        <h2 class="section-title">COMCYBER <span class="accent">BRIEF</span></h2>
+        <p class="lead">Jeudi 09 octobre 2025. Lancement officiel et cadrage operationnel.</p>
+
+        <p>
+         Cette seance constituait une introduction a l exercice dans un contexte immersif de cyber guerre opposant plusieurs pays virtuels. Chaque equipe representait une nation, et notre groupe incarnait le pays de Cryptanga, avec pour mission de proteger ses infrastructures et de faire face aux actions des pays adverses. Les organisateurs ont presente le cadre, les regles, les objectifs et le deroule global, en insistant sur l importance de la coordination, de la communication et de la capacite a prendre des decisions rapidement dans un environnement sous pression.
+         
+        </p>
+
+        <p>
+          Cette phase a egalement permis de faire connaissance avec les membres de l equipe et de commencer a etablir une organisation interne. Afin de nous mettre en condition, nous avons realise plusieurs challenges sur RootMe Pro, ce qui nous a permis d evaluer notre niveau, d identifier nos competences et de nous familiariser avec le type de problemes que nous allions rencontrer durant l exercice.
+        </p>
+
+
+        <div class="stats-row">
+          <div class="stat-chip">
+            <div class="stat-top">DATE</div>
+            <div class="stat-bottom">09.10.2025</div>
+          </div>
+          <div class="stat-chip">
+            <div class="stat-top">FOCUS</div>
+            <div class="stat-bottom">RULES</div>
+          </div>
+          <div class="stat-chip">
+            <div class="stat-top">TEAMS</div>
+            <div class="stat-bottom">CRYPTANGA</div>
+          </div>
+        </div>
+
+        <a href="#preparation" class="cyber-btn">ALLER A LA PREPA</a>
+      </div>
+
+      <div class="kickoff-media reveal-right">
+        <div class="kickoff-image-slot frame-scan">
+          <img src="drapeau.jpeg" alt="Kickoff CHE" />
+          <div class="frame-scan-line"></div>
+        </div>
+
+        <div class="holo-card compact">
+          <h3>POINTS CLES</h3>
+          <ul class="bullet-list">
+            <li>► Scenarios et perimetre</li>
+            <li>► Regles d engagement</li>
+            <li>► Organisation et roles</li>
+            <li>► Evaluation et livrables</li>
+          </ul>
+          <div class="scan-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREPARATION (DASHBOARD STYLE - DIFFERENT) -->
+  <section id="preparation" class="full-section prep-dashboard">
+    <div class="dash-bg"></div>
+
+    <div class="dash-header reveal-up">
+      <h2 class="dash-title">PHASE PREPA <span class="accent">DASHBOARD</span></h2>
+      <p class="dash-subtitle">Notre préparation face a une guerre de grande empleure. Objectif : etre operationnels.</p>
+    </div>
+
+    <div class="dash-columns">
+      <article class="dash-card reveal-up">
+        <div class="dash-card-top">
+          <div class="dash-icon">01</div>
+          <h3>Polytech Nancy</h3>
+        </div>
+        <p>
+          Grace a notre formation à Polytech Nancy, on a consolide les fondamentaux: reseaux, Linux, gestion, travail d'équipe.
+        </p>
+        <div class="meter" data-meter="50">
+          <div class="meter-label">Polytech</div>
+          <div class="meter-bar"><span></span></div>
+        </div>
+      </article>
+
+      <article class="dash-card reveal-up">
+        <div class="dash-card-top">
+          <div class="dash-icon">02</div>
+          <h3>Master SIRAV</h3>
+        </div>
+        <p>
+          Cette formation nous a permis d'acquérir l'ensemble des compétences nécessaires pour le monde de la cybersécurité. Mais cela n'est jamais suffisant ! Pour vaincre il nous en faut d'avantage. 
+        </p>
+        <div class="meter" data-meter="75">
+          <div class="meter-label">Master</div>
+          <div class="meter-bar"><span></span></div>
+        </div>
+      </article>
+
+      <article class="dash-card reveal-up">
+        <div class="dash-card-top">
+          <div class="dash-icon">03</div>
+          <h3>Equipe</h3>
+        </div>
+        <p>
+          Roles, communication, check points. On a travaille a tenir un rythme stable et a garder une vision globale,
+          meme quand ca part dans tous les sens.
+        </p>
+        <div class="meter" data-meter="90">
+          <div class="meter-label">Coordination</div>
+          <div class="meter-bar"><span></span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="dash-footer reveal-up">
+      <a href="#prepa-platforms" class="cyber-btn">SUIVANT: PLATEFORMES</a>
+    </div>
+  </section>
+
+  <!-- PREPARATION PLATFORMS (GALLERY WALL STYLE + ANIM) -->
+  <section id="prepa-platforms" class="full-section gallery-mode">
+    <div class="gallery-top reveal-up">
+      <h2 class="section-title center">PLATEFORMES <span class="accent">ROOTME / TRYHACKME</span></h2>
+      <p class="lead center">
+        Exercices sur RootMe, hack the box, tryhackme pour nous entrainer sur les différents challenge et gagner en connaissance, vitesse, logique. 
+      </p>
+    </div>
+
+    <div class="gallery-wall">
+      <div class="gallery-note reveal-left">
+        <div class="note-tag">LOADOUT</div>
+        <h3>Ce qu on a travaille</h3>
+        <ul class="bullet-list">
+          <li>► Recon et enumeration</li>
+          <li>► Web exploitation</li>
+          <li>► Linux basics + privesc</li>
+          <li>► Crypto intro + logique</li>
+        </ul>
+        <div class="pill-row">
+          <span class="pill">ROOTME</span>
+          <span class="pill">TRYHACKME</span>
+          <span class="pill">HACKTHEBOX</span>
+        </div>
+        <a href="#prepa-mental" class="cyber-btn">SUIVANT: MENTAL</a>
+      </div>
+
+      <div class="gallery-photos reveal-right">
+        <div class="polaroid tilt-a">
+          <div class="image-slot framed">
+            <div class="image-label">ROOTME</div>
+            <img src="rootme.png" alt="RootMe" />
+          </div>
+          <div class="polaroid-caption">RootMe - progression</div>
+        </div>
+
+        <div class="polaroid tilt-b">
+          <div class="image-slot framed">
+            <div class="image-label">TRYHACKME</div>
+            <img src="tryhackme.png" alt="TryHackMe" />
+          </div>
+          <div class="polaroid-caption">TryHackMe - rooms</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREPARATION MENTALE (TIMELINE HEARTBEAT STYLE) -->
+  <section id="prepa-mental" class="full-section mental-mode">
+    <div class="mental-grid">
+      <div class="mental-left reveal-left">
+        <h2 class="section-title">PREPA <span class="accent">MENTALE</span></h2>
+        <p class="lead">Le niveau monte vite. On a aussi prepare le mental et la cohesion.</p>
+
+        <p>
+          On a mis en place une routine: sport pour garder l energie, reunions courtes pour cadrer les roles,
+          et repetition de scenarios pour limiter l improvisation le jour J. Un groupe discord a aussi été créé pour la communication entre nous. 
+        </p>
+
+        <div class="mental-bullets">
+          <div class="mental-item">
+            <div class="mental-dot"></div>
+            <div class="mental-text">
+              <div class="mental-title">Sport</div>
+              <div class="mental-desc">Cardio + renfo pour garder un niveau d energie stable.</div>
+            </div>
+          </div>
+
+          <div class="mental-item">
+            <div class="mental-dot"></div>
+            <div class="mental-text">
+              <div class="mental-title">Reunions</div>
+              <div class="mental-desc">Planning, roles, checklists, et plan de com interne.</div>
+            </div>
+          </div>
+
+          <div class="mental-item">
+            <div class="mental-dot"></div>
+            <div class="mental-text">
+              <div class="mental-title">Rituels</div>
+              <div class="mental-desc">Debrief rapide, notes, et priorites claires a chaque session.</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#prepa-ctf" class="cyber-btn">SUIVANT: CTF</a>
+      </div>
+
+      <div class="mental-right reveal-right">
+        <div class="heartbeat-card">
+          <div class="heartbeat-top">
+            <span class="hb-label">STRESS CONTROL</span>
+            <span class="hb-value" id="hbValue">72 BPM</span>
+          </div>
+          <div class="heartbeat-line">
+            <span class="hb-glow"></span>
+          </div>
+          <div class="hb-footer">
+            <div class="hb-chip">SLEEP</div>
+            <div class="hb-chip">FOCUS</div>
+            <div class="hb-chip">COHESION</div>
+          </div>
+        </div>
+
+        <!--<div class="mental-image frame-scan">
+          <div class="image-slot wide">
+            <div class="image-label">OPTIONAL IMAGE SLOT - TEAM / SPORT</div>
+            <!-- <img src="assets/mental.jpg" alt="Mental prep" /> 
+          </div>
+          <div class="frame-scan-line"></div>
+        </div>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- PREPARATION CTF (EXACTLY 2 IMAGES) -->
+  <section id="prepa-ctf" class="full-section ctf-mode">
+    <div class="ctf-top reveal-up">
+      <h2 class="section-title center">PREPA <span class="accent">CTF</span></h2>
+      <p class="lead center">
+      Participation a des CTF (Capture The Flag) pour des mises en conditions réelles.
+      </p>
+    </div>
+
+    <div class="ctf-split">
+      <div class="ctf-left reveal-left">
+        <div class="ctf-terminal">
+          <div class="mini-terminal-top">
+            <span class="lamp r"></span><span class="lamp y"></span><span class="lamp g"></span>
+            <span class="mini-terminal-title">ctf_session.log</span>
+          </div>
+          <pre class="ctf-terminal-body" id="ctfTerminal"></pre>
+        </div>
+
+        <div class="ctf-stats">
+          <div class="ctf-stat">
+            <div class="ctf-stat-top">TEAM</div>
+            <div class="ctf-stat-bottom">COORD</div>
+          </div>
+          <div class="ctf-stat">
+            <div class="ctf-stat-top">SPEED</div>
+            <div class="ctf-stat-bottom">EXEC</div>
+          </div>
+          <div class="ctf-stat">
+            <div class="ctf-stat-top">NOTES</div>
+            <div class="ctf-stat-bottom">LOGS</div>
+          </div>
+        </div>
+
+        <a href="#during-che" class="cyber-btn">SUIVANT: PENDANT LE CHE</a>
+      </div>
+
+      <div class="ctf-right reveal-right">
+        <div class="ctf-photos">
+          <div class="image-slot framed big">
+            <div class="image-label">Rhintech CTF</div>
+            <img src="rhintech.jpeg" alt="CTF 1" /> 
+          </div>
+          <div class="image-slot framed big">
+            <div class="image-label">TRACS</div>
+            <img src="tracs.jpeg" alt="CTF 2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DURING CHE (TERMINAL + MISSION CARDS + PHOTOS) -->
+  <section id="during-che" class="full-section ops-mode">
+    <div class="ops-overlay"></div>
+
+    <div class="ops-wrap">
+      <div class="ops-head reveal-up">
+        <h2 class="ops-title">PENDANT LE <span class="accent">CHE</span></h2>
+        <p class="ops-sub">Mode operationnel: analyser, exploiter, defendre, communiquer.</p>
+      </div>
+
+      <div class="ops-main">
+        <div class="ops-console reveal-left">
+          <div class="mini-terminal-top">
+            <span class="lamp r"></span><span class="lamp y"></span><span class="lamp g"></span>
+            <span class="mini-terminal-title">ops_console</span>
+          </div>
+          <pre class="ops-console-body" id="opsConsole"></pre>
+
+          <div class="ops-tags">
+            <span class="tag">VULN ANALYSIS</span>
+            <span class="tag">CRYPTO</span>
+            <span class="tag">MAPPING</span>
+            <span class="tag">MALWARE</span>
+            <span class="tag">LIO</span>
+            <span class="tag">LID</span>
+          </div>
+        </div>
+
+        <div class="ops-cards reveal-right">
+          <div class="ops-card">
+            <div class="ops-card-top">
+              <span class="ops-id">A</span>
+              <h3>Analyse de vulnerabilités</h3>
+            </div>
+            <p>Identifier, valider, prioriser, et produire des preuves exploitables. Toujours attendre la validation du capitaine pour agir.</p>
+          </div>
+
+          <div class="ops-card">
+            <div class="ops-card-top">
+              <span class="ops-id">B</span>
+              <h3>Challenges</h3>
+            </div>
+            <p>Plusieurs challenge au seins du CHE, challenge cryptographique, penetration dans un embassade, retrouver un message dans un téléphone...</p>
+          </div>
+
+          <div class="ops-card">
+            <div class="ops-card-top">
+              <span class="ops-id">C</span>
+              <h3>Cartographie</h3>
+            </div>
+            <p>Comprendre les flux, dependances, et points de passage critiques.</p>
+          </div>
+
+          <div class="ops-card">
+            <div class="ops-card-top">
+              <span class="ops-id">D</span>
+              <h3>LIO + LID</h3>
+            </div>
+            <p>Deploiement de Malware chez l'ennemie, attaque DDOS, sécurisation de notre environnement, malware neutralisé dans notre pays.</p>
+          </div>
+
+          <div class="ops-photo-grid">
+            <div class="image-slot framed">
+              <div class="image-label">Tente Cryptanga</div>
+              <img src="tente.jpeg" alt="CHE 1" />
+            </div>
+            <div class="image-slot framed">
+              <div class="image-label">Ration de combat</div>
+              <img src="ration.jpeg" alt="CHE 2" /> 
+            </div>
+          </div>
+
+          <a href="#end-che" class="cyber-btn">SUIVANT: FIN DU CHE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END CHE (CINEMATIC RESULT + COUNTERS + 2 PHOTOS) -->
+  <section id="end-che" class="full-section end-mode">
+    <div class="end-overlay"></div>
+    <div class="end-spot"></div>
+
+    <div class="end-wrap">
+      <div class="end-left reveal-left">
+        <div class="trophy-icon">🏆</div>
+        <h2 class="end-title">FIN DU CHE</h2>
+
+        <p class="end-text">
+          Cet exercice nous a appris a travailler comme une equipe operationnelle: structurer une demarche,
+          communiquer sous pression, documenter vite, et garder une execution constante.
+          On ressort avec des reflexes solides, une meilleure vision des enjeux, et une capacite a agir sur du realiste.
+          Malgré le stresse et la fatigue engendré tout au long de l'evenement, nous sommes unanime pour dire que c'est l'un des meilleurs evenements auquels ont a assisté (nous sommes nostalgique).
+        </p>
+
+        <div class="counter-row">
+          <div class="counter-card">
+            <div class="counter" data-count="72">0</div>
+            <div class="counter-label">HEURES</div>
+          </div>
+          <div class="counter-card">
+            <div class="counter" data-count="3">0</div>
+            <div class="counter-label">Pays</div>
+          </div>
+          <div class="counter-card">
+            <div class="counter" data-count="1">0</div>
+            <div class="counter-label">RANG</div>
+          </div>
+        </div>
+
+        <div class="rank-banner">
+          <div class="rank-big">RANG #1</div>
+          <div class="rank-sub">Victoire de Cryptanga</div>
+        </div>
+        <!--
+        <a href="mailto:tonemail@exemple.com" class="cyber-btn white">CONTACTER L OPERATEUR</a>  -->
+        <a href="#top" class="cyber-btn ghost">REMONTER</a>
+      </div>
+
+      <div class="end-right reveal-right">
+        <div class="end-photos">
+          <div class="image-slot framed big">
+            <!--<div class="image-label">END PHOTO 01</div>-->
+            <img src="photomaton.jpeg" alt="End 1" />
+          </div>
+          <div class="image-slot framed big">
+            <div class="image-label">END PHOTO 02</div>
+            <!-- <img src="assets/end_2.jpg" alt="End 2" /> -->
+          </div>
+        </div>
+
+        <div class="end-learning">
+          <h3>CE QUE CA A RENFORCE</h3>
+          <ul class="bullet-list">
+            <li>► Rapidite + rigueur</li>
+            <li>► Coordination et repartition des roles</li>
+            <li>► Analyse, priorisation, decision</li>
+            <li>► Adaptation face a l imprevu</li>
+            <li>► Amour pour la cybersécurité</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
